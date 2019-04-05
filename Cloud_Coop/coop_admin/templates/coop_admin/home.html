@@ -1,4 +1,18 @@
  {% extends "coop_admin/base.html" %}
     {% block content %}
-    	<h1>Classes View!</h1>
+    	<h1 style="text-align: center">Classes View!</h1>
+
+    	{% for class in classes %}
+
+    	<p class="bg-steel"> {{class.teacher}}
+    		                 {{class.name}}
+    		                 {{class.date_created}}
+    	</p>
+    	<hr>
+    	{% endfor %}
+
+
+
+
+
     {% endblock content %}

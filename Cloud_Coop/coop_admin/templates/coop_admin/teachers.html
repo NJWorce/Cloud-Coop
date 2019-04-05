@@ -1,4 +1,15 @@
  {% extends "coop_admin/base.html" %}
     {% block content %}
     	<h1>This is Where you can see the Teachers</h1>
+    	<hr>
+    	{% for teacher in teachers %}
+
+    	<p class="post">
+
+    	{{teacher}}
+
+        </p>
+
+    	<hr>
+    	{% endfor %}
     {% endblock content %}

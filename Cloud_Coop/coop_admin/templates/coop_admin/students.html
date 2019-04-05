@@ -1,4 +1,15 @@
  {% extends "coop_admin/base.html" %}
     {% block content %}
     	<h1>Students in your School!</h1>
+    	{% for student in students %}
+
+    	<p class="post">
+
+    	{{student}}
+
+        </p>
+
+    	<hr>
+    	{% endfor %}
+
     {% endblock content %}
