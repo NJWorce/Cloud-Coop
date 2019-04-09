@@ -128,3 +128,7 @@ LOGIN_REDIRECT_URL = 'admin-home' # name I gave this the path in urls
 
 LOGIN_URL = 'login'   # this is what i changed after the login required dec
                       # was routing the wrong way. 
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'
