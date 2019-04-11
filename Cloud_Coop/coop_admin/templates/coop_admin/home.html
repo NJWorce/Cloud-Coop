@@ -4,9 +4,16 @@
 
     	{% for class in classes %}
 
-    	<p class="bg-steel"> {{class.teacher}}
-    		                 {{class.name}}
-    		                 {{class.date_created}}
+    	<p class="text-bold">
+
+         {{class.teacher}} -- 
+
+         <a href="{% url 'class-detail' class.id %}">
+
+    	  -- {{class.name}} --
+        </a>
+         --
+    	 {{class.date_created}}
     	</p>
     	<hr>
     	{% endfor %}

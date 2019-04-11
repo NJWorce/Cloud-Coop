@@ -1,0 +1,19 @@
+{% extends "coop_admin/base.html" %}
+    {% block content %}
+    	<h1 style="text-align: center">Class Details</h1>
+
+    	
+
+    	<p class="block">Class instructor -- {{object.teacher}}</p>
+
+    		          <h4 class="center">Class Name--{{object.name}} </h4>
+                      <p>{{object.description}}</p>
+
+
+    		          <p>Created  {{object.date_created}} by {{object.author}}</p>
+
+
+    	
+
+
+    {% endblock content %}
