@@ -1,0 +1,18 @@
+{% extends "coop_admin/base.html" %}
+{% block content %}
+	<div class = "content-section">
+		<form method="POST">
+			{% csrf_token %}
+			<fieldset class="form-group">
+				<legend class="border-bottom mb-4">Class Deletion</legend>
+            </fieldset>
+            <h3>Sure you want to exterminate {{object.name}}? </h3>
+            <h4>They may yet serve our purposes....</h4>
+			<div class="form-group">
+                <button class="btn btn-outline-danger" type="submit">Yes, Delete</button>
+                <a href="{% url 'class-detail' object.id %}" class="btn btn-outline-seccondary">Back to Class</a>  
+			</div>
+		</form>
+	</div>
+
+{% endblock content %}

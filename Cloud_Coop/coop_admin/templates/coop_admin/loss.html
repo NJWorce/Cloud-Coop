@@ -1,0 +1,10 @@
+{% extends "coop_admin/base.html" %}
+{% load static %}
+{% block content %}
+	<div class = "content-section">
+		<img class='center' src="{% static "coop_admin/loss.jpg" %}">
+    </div>
+    <h3 class="center"><a href="{% url 'admin-home' %}"> Go Home </a></h3>
+
+
+{% endblock content %}
